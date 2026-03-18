@@ -5,10 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources — How to Build a Monetizable Brand</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .paper-card {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 12px;
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .paper-card .paper-eyebrow {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--clay);
+      font-weight: 700;
+    }
+    .paper-card h3 {
+      font-size: 1.35rem;
+      color: var(--cream);
+      margin: 0;
+      line-height: 1.35;
+    }
+    .paper-card p {
+      color: #b8b0a6;
+      font-size: 0.93rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+    .paper-card .paper-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+    }
+    .paper-card .paper-meta span {
+      background: rgba(255,255,255,0.08);
+      border-radius: 4px;
+      padding: 0.25rem 0.65rem;
+      color: #c8c0b6;
+    }
+    .paper-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .paper-actions .btn-dl {
+      display: inline-block;
+      background: var(--clay);
+      color: #fff;
+      padding: 0.65rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: opacity 0.2s;
+    }
+    .paper-actions .btn-dl:hover { opacity: 0.85; }
+    .paper-actions .btn-read {
+      display: inline-block;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      color: var(--cream);
+      padding: 0.65rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: border-color 0.2s;
+    }
+    .paper-actions .btn-read:hover { border-color: var(--clay); color: var(--clay); }
+  </style>
 </head>
 <body>
 
-  <!-- ── Navigation ── -->
   <nav>
     <a class="nav-brand" href="../index.html">Erik — Capstone</a>
     <ul class="nav-links">
@@ -16,21 +90,48 @@
       <li><a href="essay.html">Essay</a></li>
       <li><a href="findings.html">Key Findings</a></li>
       <li><a href="resources.html" class="active">Resources</a></li>
+      <li><a href="works-cited.html">Works Cited</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
 
-  <!-- ── Page Header ── -->
   <header class="page-header">
     <div class="inner">
       <span class="eyebrow">Further Reading &amp; Tools</span>
       <h1>Resources</h1>
-      <p>Books, academic articles, business tools, and worksheets referenced or recommended in this research.</p>
+      <p>The capstone paper, recommended books, academic articles, and business tools referenced in this research.</p>
     </div>
   </header>
 
-  <!-- ── Books ── -->
+  <!-- ── Capstone Paper ── -->
   <div class="full-panel panel-white">
+    <div class="section scroll-fade">
+      <span class="section-label">Primary Source</span>
+      <h2>The Capstone Paper</h2>
+      <div class="divider"></div>
+      <p>This research is the primary academic source behind this website. Written as a Capstone Semester 1 project at Oakland Technical High School, the paper synthesizes 24 academic sources into a comprehensive framework for building a monetizable brand in the digital economy.</p>
+
+      <div class="paper-card">
+        <div class="paper-eyebrow">Capstone Research Paper · MLA Format</div>
+        <h3>How to Build a Monetizable Brand and a Sustainable Business in Today's Digital Economy</h3>
+        <p>A 9+ page academic paper covering brand orientation, digital marketing, monetization frameworks, e-commerce operations, community building, legal protection, financial planning, and case studies of Glossier, Pollo Campero, Heineken, and Coca-Cola.</p>
+        <div class="paper-meta">
+          <span>Erik Quintanilla Cruz</span>
+          <span>Oakland Technical High School</span>
+          <span>Capstone Semester 1</span>
+          <span>September 19, 2025</span>
+          <span>24 Sources Cited</span>
+        </div>
+        <div class="paper-actions">
+          <a href="../assets/capstone_paper.docx" download="Quintanilla_Cruz_Capstone_Paper.docx" class="btn-dl">⬇ Download (.docx)</a>
+          <a href="essay.html" class="btn-read">Read Online →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Books ── -->
+  <div class="full-panel panel-sage">
     <div class="section">
       <span class="section-label">Recommended Books</span>
       <h2>Further Reading</h2>
@@ -45,74 +146,76 @@
           <strong>Subscribed — Tien Tzuo</strong>
           Deep-dive into subscription business model strategy. Covers pricing, retention, and scaling recurring revenue.
         </div>
+        <div class="resource-item">
+          <strong>Business Model Generation — Alexander Osterwalder</strong>
+          The definitive guide to the Business Model Canvas framework referenced throughout the capstone paper. Practical for early-stage entrepreneurs mapping value creation systems.
+        </div>
+        <div class="resource-item">
+          <strong>Contagious — Jonah Berger</strong>
+          Research-backed framework for understanding why content and brands go viral. Directly relevant to the digital marketing and community-building sections of the paper.
+        </div>
       </div>
     </div>
   </div>
 
   <!-- ── Academic Articles ── -->
-  <div class="full-panel panel-sage">
+  <div class="full-panel panel-white">
     <div class="section">
       <span class="section-label">Academic Sources</span>
-      <h2>Research Articles</h2>
+      <h2>Key Research Articles</h2>
       <div class="divider"></div>
+      <p style="margin-bottom:1.5rem;">Selected highlights from the 24 sources cited in the paper. <a href="works-cited.html" style="color:var(--clay);">View the full Works Cited →</a></p>
 
       <div class="resource-group scroll-fade">
         <div class="resource-item">
-          <strong>Samoilenko, V. (2025)</strong>
-          Monetization of a personal brand: Strategies for earning influencers in different niches. <em>Internauka.</em> https://doi.org/10.25313/2520-2057-2025-6
+          <strong>Libai et al. — Influencer Marketing Unlocked (2025)</strong>
+          Introduces an equity-driven framework analyzing how influencers contribute to customer equity and platform value. <em>Journal of the Academy of Marketing Science.</em>
+          <br><a href="https://doi.org/10.1007/s11747-024-01073-2" target="_blank" rel="noopener" style="color:var(--dusty-blue); font-size:0.85rem;">doi.org/10.1007/s11747-024-01073-2</a>
         </div>
         <div class="resource-item">
-          <strong>Adewunmi, O. (2024)</strong>
-          Monetization strategies for content creators. <em>IOSR Journal of Economics and Finance, 15</em>(6), 57–66.
+          <strong>Rieder et al. — Making a Living in the Creator Economy (2023)</strong>
+          Large-scale study of how YouTube creators link to external platforms to diversify income. <em>Social Media + Society.</em>
+          <br><a href="https://doi.org/10.1177/20563051231180628" target="_blank" rel="noopener" style="color:var(--dusty-blue); font-size:0.85rem;">doi.org/10.1177/20563051231180628</a>
         </div>
         <div class="resource-item">
-          <strong>ResearchGate (n.d.)</strong>
-          A comprehensive overview of monetization strategies in creative industries. ResearchGate.
+          <strong>Weland et al. — Subscription-Based Business Models (2024)</strong>
+          Examines how tech firms capture value through agile subscription infrastructure. <em>International Journal of Industrial Engineering and Operations Management.</em>
+          <br><a href="https://doi.org/10.1108/IJIEOM-06-2023-0054" target="_blank" rel="noopener" style="color:var(--dusty-blue); font-size:0.85rem;">doi.org/10.1108/IJIEOM-06-2023-0054</a>
+        </div>
+        <div class="resource-item">
+          <strong>Ascarza et al. — In Pursuit of Enhanced Customer Retention (2018)</strong>
+          Comprehensive framework for identifying at-risk customers and designing retention campaigns. <em>Customer Needs and Solutions, Springer.</em>
+          <br><a href="https://doi.org/10.1007/s40547-017-0080-0" target="_blank" rel="noopener" style="color:var(--dusty-blue); font-size:0.85rem;">doi.org/10.1007/s40547-017-0080-0</a>
+        </div>
+        <div class="resource-item">
+          <strong>Hödl &amp; Myrach — Content Creators Between Platform Control and User Autonomy (2023)</strong>
+          Examines how algorithmic control creates income volatility for digital creators. <em>Business &amp; Information Systems Engineering.</em>
+          <br><a href="https://doi.org/10.1007/s12599-023-00808-9" target="_blank" rel="noopener" style="color:var(--dusty-blue); font-size:0.85rem;">doi.org/10.1007/s12599-023-00808-9</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ── Business Tools ── -->
-  <div class="full-panel panel-white">
+  <div class="full-panel panel-sage">
     <div class="section scroll-fade">
       <span class="section-label">Business Tools &amp; Platforms</span>
       <h2>Recommended Tools</h2>
       <div class="divider"></div>
 
       <div class="tools-grid">
-        <div class="tool-chip">
-          <span class="tool-cat">Email</span>
-          ConvertKit
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Email</span>
-          Mailchimp
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Payments</span>
-          Stripe
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Payments</span>
-          PayPal
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Membership</span>
-          Patreon
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Membership</span>
-          Memberful
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Analytics</span>
-          Google Analytics
-        </div>
-        <div class="tool-chip">
-          <span class="tool-cat">Analytics</span>
-          Platform Insights
-        </div>
+        <div class="tool-chip"><span class="tool-cat">Email</span>ConvertKit</div>
+        <div class="tool-chip"><span class="tool-cat">Email</span>Mailchimp</div>
+        <div class="tool-chip"><span class="tool-cat">CRM</span>HubSpot</div>
+        <div class="tool-chip"><span class="tool-cat">Payments</span>Stripe</div>
+        <div class="tool-chip"><span class="tool-cat">Payments</span>PayPal</div>
+        <div class="tool-chip"><span class="tool-cat">E-Commerce</span>Shopify</div>
+        <div class="tool-chip"><span class="tool-cat">Membership</span>Patreon</div>
+        <div class="tool-chip"><span class="tool-cat">Membership</span>Memberful</div>
+        <div class="tool-chip"><span class="tool-cat">Analytics</span>Google Analytics</div>
+        <div class="tool-chip"><span class="tool-cat">Analytics</span>Platform Insights</div>
+        <div class="tool-chip"><span class="tool-cat">Logistics</span>ShipBob</div>
+        <div class="tool-chip"><span class="tool-cat">Logistics</span>Amazon FBA</div>
       </div>
     </div>
   </div>
@@ -120,8 +223,8 @@
   <!-- ── Worksheets ── -->
   <div class="full-panel panel-blue">
     <div class="section scroll-fade">
-      <span class="section-label">Downloadable Worksheets</span>
-      <h2>Implementation Tools</h2>
+      <span class="section-label">Implementation Tools</span>
+      <h2>Worksheets &amp; Templates</h2>
       <div class="divider"></div>
       <p>These worksheets translate the research findings into hands-on exercises for early-stage entrepreneurs.</p>
 
@@ -132,26 +235,30 @@
         </div>
         <div class="resource-item">
           <strong>Business Model Canvas Template</strong>
-          Map your value proposition, customer segments, channels, revenue streams, and cost structure.
+          Map your value proposition, customer segments, channels, revenue streams, and cost structure — based on the Osterwalder framework discussed in the paper.
         </div>
         <div class="resource-item">
           <strong>Launch Checklist</strong>
-          Step-by-step guide from lead magnet creation → email capture setup → entry product launch.
+          Step-by-step guide from lead magnet creation → email capture setup → entry product launch → subscription tier introduction.
+        </div>
+        <div class="resource-item">
+          <strong>LTV/CAC Calculator</strong>
+          A simple spreadsheet for calculating your customer lifetime value to acquisition cost ratio — the key unit economics metric from the paper.
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ── Footer ── -->
   <footer>
     <ul class="footer-nav">
       <li><a href="../index.html">Home</a></li>
       <li><a href="essay.html">Essay</a></li>
       <li><a href="findings.html">Key Findings</a></li>
       <li><a href="resources.html">Resources</a></li>
+      <li><a href="works-cited.html">Works Cited</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
-    <p>This website presents a high school capstone research project. Sources are listed in the References section.</p>
+    <p>Erik Quintanilla Cruz · Oakland Technical High School · Capstone Semester 1 · 2025</p>
     <p>© 2026 — Erik</p>
   </footer>
 
